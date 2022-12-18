@@ -1,0 +1,8929 @@
+[
+  {
+    "type": "array_type",
+    "named": true,
+    "fields": {
+      "type": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "compound_literal",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseParen",
+          "named": true
+        },
+        {
+          "type": "Token_OpenParen",
+          "named": true
+        },
+        {
+          "type": "array_type_prefix",
+          "named": true
+        },
+        {
+          "type": "pragma_identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "array_type_prefix",
+    "named": true,
+    "fields": {
+      "size": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "keyword",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseBracket",
+          "named": true
+        },
+        {
+          "type": "Token_OpenBracket",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "assignment_statement",
+    "named": true,
+    "fields": {
+      "lhs": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Comma",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "var_identifier",
+            "named": true
+          }
+        ]
+      },
+      "rhs": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Comma",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "compound_literal",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "operator",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "binary_expression",
+    "named": true,
+    "fields": {
+      "left": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "operator": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "operator",
+            "named": true
+          }
+        ]
+      },
+      "right": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "compound_literal",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "bit_set_type",
+    "named": true,
+    "fields": {
+      "backing": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "range": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "type": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseBracket",
+          "named": true
+        },
+        {
+          "type": "Token_OpenBracket",
+          "named": true
+        },
+        {
+          "type": "Token_Semicolon",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseBrace",
+          "named": true
+        },
+        {
+          "type": "Token_CloseParen",
+          "named": true
+        },
+        {
+          "type": "Token_Float",
+          "named": true
+        },
+        {
+          "type": "Token_Ident",
+          "named": true
+        },
+        {
+          "type": "Token_Imag",
+          "named": true
+        },
+        {
+          "type": "Token_Integer",
+          "named": true
+        },
+        {
+          "type": "Token_OpenBrace",
+          "named": true
+        },
+        {
+          "type": "Token_OpenParen",
+          "named": true
+        },
+        {
+          "type": "Token_Rune",
+          "named": true
+        },
+        {
+          "type": "Token_Semicolon",
+          "named": true
+        },
+        {
+          "type": "Token_String",
+          "named": true
+        },
+        {
+          "type": "Token_context",
+          "named": true
+        },
+        {
+          "type": "Token_fallthrough",
+          "named": true
+        },
+        {
+          "type": "Token_typeid",
+          "named": true
+        },
+        {
+          "type": "array_type",
+          "named": true
+        },
+        {
+          "type": "assignment_statement",
+          "named": true
+        },
+        {
+          "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "bit_set_type",
+          "named": true
+        },
+        {
+          "type": "block_statement",
+          "named": true
+        },
+        {
+          "type": "break_statement",
+          "named": true
+        },
+        {
+          "type": "continue_statement",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "defer_statement",
+          "named": true
+        },
+        {
+          "type": "enum_type",
+          "named": true
+        },
+        {
+          "type": "for_statement",
+          "named": true
+        },
+        {
+          "type": "foreign_block",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "index_expression",
+          "named": true
+        },
+        {
+          "type": "left_unary_expression",
+          "named": true
+        },
+        {
+          "type": "map_type",
+          "named": true
+        },
+        {
+          "type": "matrix_type",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        },
+        {
+          "type": "parapoly",
+          "named": true
+        },
+        {
+          "type": "pointer_type",
+          "named": true
+        },
+        {
+          "type": "pragma",
+          "named": true
+        },
+        {
+          "type": "proc_call",
+          "named": true
+        },
+        {
+          "type": "proc_group",
+          "named": true
+        },
+        {
+          "type": "proc_literal",
+          "named": true
+        },
+        {
+          "type": "proc_type",
+          "named": true
+        },
+        {
+          "type": "return_statement",
+          "named": true
+        },
+        {
+          "type": "right_unary_expression",
+          "named": true
+        },
+        {
+          "type": "selector_expression",
+          "named": true
+        },
+        {
+          "type": "struct_type",
+          "named": true
+        },
+        {
+          "type": "switch_statement",
+          "named": true
+        },
+        {
+          "type": "ternary_expression",
+          "named": true
+        },
+        {
+          "type": "type_conversion",
+          "named": true
+        },
+        {
+          "type": "type_identifier",
+          "named": true
+        },
+        {
+          "type": "union_type",
+          "named": true
+        },
+        {
+          "type": "using_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "block_statement",
+    "named": true,
+    "fields": {
+      "label": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_Colon",
+            "named": true
+          },
+          {
+            "type": "label_identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "block",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "break_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "label_identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "case_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseParen",
+          "named": true
+        },
+        {
+          "type": "Token_Comma",
+          "named": true
+        },
+        {
+          "type": "Token_Float",
+          "named": true
+        },
+        {
+          "type": "Token_Ident",
+          "named": true
+        },
+        {
+          "type": "Token_Imag",
+          "named": true
+        },
+        {
+          "type": "Token_Integer",
+          "named": true
+        },
+        {
+          "type": "Token_OpenParen",
+          "named": true
+        },
+        {
+          "type": "Token_Rune",
+          "named": true
+        },
+        {
+          "type": "Token_Semicolon",
+          "named": true
+        },
+        {
+          "type": "Token_String",
+          "named": true
+        },
+        {
+          "type": "Token_context",
+          "named": true
+        },
+        {
+          "type": "Token_fallthrough",
+          "named": true
+        },
+        {
+          "type": "Token_typeid",
+          "named": true
+        },
+        {
+          "type": "array_type",
+          "named": true
+        },
+        {
+          "type": "assignment_statement",
+          "named": true
+        },
+        {
+          "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "bit_set_type",
+          "named": true
+        },
+        {
+          "type": "block_statement",
+          "named": true
+        },
+        {
+          "type": "break_statement",
+          "named": true
+        },
+        {
+          "type": "continue_statement",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "defer_statement",
+          "named": true
+        },
+        {
+          "type": "enum_type",
+          "named": true
+        },
+        {
+          "type": "for_statement",
+          "named": true
+        },
+        {
+          "type": "foreign_block",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "index_expression",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "left_unary_expression",
+          "named": true
+        },
+        {
+          "type": "map_type",
+          "named": true
+        },
+        {
+          "type": "matrix_type",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        },
+        {
+          "type": "parapoly",
+          "named": true
+        },
+        {
+          "type": "pointer_type",
+          "named": true
+        },
+        {
+          "type": "pragma",
+          "named": true
+        },
+        {
+          "type": "proc_call",
+          "named": true
+        },
+        {
+          "type": "proc_group",
+          "named": true
+        },
+        {
+          "type": "proc_literal",
+          "named": true
+        },
+        {
+          "type": "proc_type",
+          "named": true
+        },
+        {
+          "type": "return_statement",
+          "named": true
+        },
+        {
+          "type": "right_unary_expression",
+          "named": true
+        },
+        {
+          "type": "selector_expression",
+          "named": true
+        },
+        {
+          "type": "struct_type",
+          "named": true
+        },
+        {
+          "type": "switch_statement",
+          "named": true
+        },
+        {
+          "type": "ternary_expression",
+          "named": true
+        },
+        {
+          "type": "type_conversion",
+          "named": true
+        },
+        {
+          "type": "type_identifier",
+          "named": true
+        },
+        {
+          "type": "union_type",
+          "named": true
+        },
+        {
+          "type": "using_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "compiler_directive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_Hash",
+          "named": true
+        },
+        {
+          "type": "Token_Ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "compound_literal",
+    "named": true,
+    "fields": {
+      "contents": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "compound_literal_list",
+            "named": true
+          },
+          {
+            "type": "initializer_list",
+            "named": true
+          }
+        ]
+      },
+      "type": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseBrace",
+          "named": true
+        },
+        {
+          "type": "Token_OpenBrace",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "compound_literal_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_Comma",
+          "named": true
+        },
+        {
+          "type": "compound_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "continue_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "label_identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "declaration",
+    "named": true,
+    "fields": {
+      "const_value": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Comma",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "compound_literal",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_Comma",
+            "named": true
+          },
+          {
+            "type": "decl_identifier",
+            "named": true
+          }
+        ]
+      },
+      "type": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "variable_value": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Comma",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "compound_literal",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "defer_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "assignment_statement",
+          "named": true
+        },
+        {
+          "type": "block_statement",
+          "named": true
+        },
+        {
+          "type": "break_statement",
+          "named": true
+        },
+        {
+          "type": "continue_statement",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "pragma",
+          "named": true
+        },
+        {
+          "type": "proc_call",
+          "named": true
+        },
+        {
+          "type": "return_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "enum_type",
+    "named": true,
+    "fields": {
+      "backing": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "variants": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "initializer_list",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseBrace",
+          "named": true
+        },
+        {
+          "type": "Token_OpenBrace",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "for_statement",
+    "named": true,
+    "fields": {
+      "body": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_fallthrough",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "assignment_statement",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "block",
+            "named": true
+          },
+          {
+            "type": "block_statement",
+            "named": true
+          },
+          {
+            "type": "break_statement",
+            "named": true
+          },
+          {
+            "type": "continue_statement",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "defer_statement",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "for_statement",
+            "named": true
+          },
+          {
+            "type": "foreign_block",
+            "named": true
+          },
+          {
+            "type": "if_statement",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "keyword",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "pragma",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "return_statement",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "switch_statement",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "using_statement",
+            "named": true
+          }
+        ]
+      },
+      "condition": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "initializer": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "assignment_statement",
+            "named": true
+          },
+          {
+            "type": "break_statement",
+            "named": true
+          },
+          {
+            "type": "continue_statement",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "pragma",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "return_statement",
+            "named": true
+          }
+        ]
+      },
+      "label": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_Colon",
+            "named": true
+          },
+          {
+            "type": "label_identifier",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_Ident",
+            "named": true
+          }
+        ]
+      },
+      "range": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "update": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "assignment_statement",
+            "named": true
+          },
+          {
+            "type": "break_statement",
+            "named": true
+          },
+          {
+            "type": "continue_statement",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "pragma",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "return_statement",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_Comma",
+          "named": true
+        },
+        {
+          "type": "Token_Semicolon",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "foreign_block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseBrace",
+          "named": true
+        },
+        {
+          "type": "Token_OpenBrace",
+          "named": true
+        },
+        {
+          "type": "Token_Semicolon",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "package_identifier",
+          "named": true
+        },
+        {
+          "type": "pragma",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "if_statement",
+    "named": true,
+    "fields": {
+      "condition": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "if_false": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_fallthrough",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "assignment_statement",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "block",
+            "named": true
+          },
+          {
+            "type": "block_statement",
+            "named": true
+          },
+          {
+            "type": "break_statement",
+            "named": true
+          },
+          {
+            "type": "continue_statement",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "defer_statement",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "for_statement",
+            "named": true
+          },
+          {
+            "type": "foreign_block",
+            "named": true
+          },
+          {
+            "type": "if_statement",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "keyword",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "pragma",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "return_statement",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "switch_statement",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "using_statement",
+            "named": true
+          }
+        ]
+      },
+      "if_true": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_Semicolon",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_fallthrough",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "assignment_statement",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "block",
+            "named": true
+          },
+          {
+            "type": "block_statement",
+            "named": true
+          },
+          {
+            "type": "break_statement",
+            "named": true
+          },
+          {
+            "type": "continue_statement",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "defer_statement",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "for_statement",
+            "named": true
+          },
+          {
+            "type": "foreign_block",
+            "named": true
+          },
+          {
+            "type": "if_statement",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "keyword",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "pragma",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "return_statement",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "switch_statement",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "using_statement",
+            "named": true
+          }
+        ]
+      },
+      "initializer": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_fallthrough",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "assignment_statement",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "block_statement",
+            "named": true
+          },
+          {
+            "type": "break_statement",
+            "named": true
+          },
+          {
+            "type": "continue_statement",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "defer_statement",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "for_statement",
+            "named": true
+          },
+          {
+            "type": "foreign_block",
+            "named": true
+          },
+          {
+            "type": "if_statement",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "pragma",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "return_statement",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "switch_statement",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "using_statement",
+            "named": true
+          }
+        ]
+      },
+      "label": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_Colon",
+            "named": true
+          },
+          {
+            "type": "label_identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_Semicolon",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "import_declaration",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "package_identifier",
+            "named": true
+          }
+        ]
+      },
+      "path": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_String",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_foreign",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "index_expression",
+    "named": true,
+    "fields": {
+      "end": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "index": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Comma",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "operand": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "start": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseBracket",
+          "named": true
+        },
+        {
+          "type": "Token_OpenBracket",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "initializer_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseParen",
+          "named": true
+        },
+        {
+          "type": "Token_Comma",
+          "named": true
+        },
+        {
+          "type": "Token_Float",
+          "named": true
+        },
+        {
+          "type": "Token_Ident",
+          "named": true
+        },
+        {
+          "type": "Token_Imag",
+          "named": true
+        },
+        {
+          "type": "Token_Integer",
+          "named": true
+        },
+        {
+          "type": "Token_OpenParen",
+          "named": true
+        },
+        {
+          "type": "Token_Rune",
+          "named": true
+        },
+        {
+          "type": "Token_String",
+          "named": true
+        },
+        {
+          "type": "Token_context",
+          "named": true
+        },
+        {
+          "type": "Token_typeid",
+          "named": true
+        },
+        {
+          "type": "array_type",
+          "named": true
+        },
+        {
+          "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "bit_set_type",
+          "named": true
+        },
+        {
+          "type": "compound_literal",
+          "named": true
+        },
+        {
+          "type": "enum_type",
+          "named": true
+        },
+        {
+          "type": "index_expression",
+          "named": true
+        },
+        {
+          "type": "left_unary_expression",
+          "named": true
+        },
+        {
+          "type": "map_type",
+          "named": true
+        },
+        {
+          "type": "matrix_type",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        },
+        {
+          "type": "parapoly",
+          "named": true
+        },
+        {
+          "type": "pointer_type",
+          "named": true
+        },
+        {
+          "type": "proc_call",
+          "named": true
+        },
+        {
+          "type": "proc_group",
+          "named": true
+        },
+        {
+          "type": "proc_literal",
+          "named": true
+        },
+        {
+          "type": "proc_type",
+          "named": true
+        },
+        {
+          "type": "right_unary_expression",
+          "named": true
+        },
+        {
+          "type": "selector_expression",
+          "named": true
+        },
+        {
+          "type": "single_assignment",
+          "named": true
+        },
+        {
+          "type": "struct_type",
+          "named": true
+        },
+        {
+          "type": "ternary_expression",
+          "named": true
+        },
+        {
+          "type": "type_conversion",
+          "named": true
+        },
+        {
+          "type": "type_identifier",
+          "named": true
+        },
+        {
+          "type": "union_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "left_unary_expression",
+    "named": true,
+    "fields": {
+      "operand": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "operator": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "operator",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "compound_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "map_type",
+    "named": true,
+    "fields": {
+      "key": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseBracket",
+          "named": true
+        },
+        {
+          "type": "Token_OpenBracket",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "matrix_type",
+    "named": true,
+    "fields": {
+      "type": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseBracket",
+          "named": true
+        },
+        {
+          "type": "Token_CloseParen",
+          "named": true
+        },
+        {
+          "type": "Token_Comma",
+          "named": true
+        },
+        {
+          "type": "Token_Float",
+          "named": true
+        },
+        {
+          "type": "Token_Ident",
+          "named": true
+        },
+        {
+          "type": "Token_Imag",
+          "named": true
+        },
+        {
+          "type": "Token_Integer",
+          "named": true
+        },
+        {
+          "type": "Token_OpenBracket",
+          "named": true
+        },
+        {
+          "type": "Token_OpenParen",
+          "named": true
+        },
+        {
+          "type": "Token_Rune",
+          "named": true
+        },
+        {
+          "type": "Token_String",
+          "named": true
+        },
+        {
+          "type": "Token_context",
+          "named": true
+        },
+        {
+          "type": "Token_typeid",
+          "named": true
+        },
+        {
+          "type": "array_type",
+          "named": true
+        },
+        {
+          "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "bit_set_type",
+          "named": true
+        },
+        {
+          "type": "enum_type",
+          "named": true
+        },
+        {
+          "type": "index_expression",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "left_unary_expression",
+          "named": true
+        },
+        {
+          "type": "map_type",
+          "named": true
+        },
+        {
+          "type": "matrix_type",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        },
+        {
+          "type": "parapoly",
+          "named": true
+        },
+        {
+          "type": "pointer_type",
+          "named": true
+        },
+        {
+          "type": "proc_call",
+          "named": true
+        },
+        {
+          "type": "proc_group",
+          "named": true
+        },
+        {
+          "type": "proc_literal",
+          "named": true
+        },
+        {
+          "type": "proc_type",
+          "named": true
+        },
+        {
+          "type": "right_unary_expression",
+          "named": true
+        },
+        {
+          "type": "selector_expression",
+          "named": true
+        },
+        {
+          "type": "struct_type",
+          "named": true
+        },
+        {
+          "type": "ternary_expression",
+          "named": true
+        },
+        {
+          "type": "type_conversion",
+          "named": true
+        },
+        {
+          "type": "type_identifier",
+          "named": true
+        },
+        {
+          "type": "union_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "package_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_package",
+          "named": true
+        },
+        {
+          "type": "package_identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "parameter_declaration",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_Colon",
+            "named": true
+          },
+          {
+            "type": "Token_Comma",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "keyword",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          }
+        ]
+      },
+      "type": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "Token_Eq",
+          "named": true
+        },
+        {
+          "type": "Token_Ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "parameter_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseParen",
+          "named": true
+        },
+        {
+          "type": "Token_Comma",
+          "named": true
+        },
+        {
+          "type": "Token_OpenParen",
+          "named": true
+        },
+        {
+          "type": "parameter_declaration",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "parapoly",
+    "named": true,
+    "fields": {
+      "arguments": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "initializer_list",
+            "named": true
+          }
+        ]
+      },
+      "caller": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "member_proc": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_Ident",
+            "named": true
+          }
+        ]
+      },
+      "procedure": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseParen",
+          "named": true
+        },
+        {
+          "type": "Token_Comma",
+          "named": true
+        },
+        {
+          "type": "Token_OpenParen",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "pointer_type",
+    "named": true,
+    "fields": {
+      "type": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseParen",
+          "named": true
+        },
+        {
+          "type": "Token_OpenParen",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        },
+        {
+          "type": "pragma_identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "pragma",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_At",
+          "named": true
+        },
+        {
+          "type": "Token_CloseParen",
+          "named": true
+        },
+        {
+          "type": "Token_Comma",
+          "named": true
+        },
+        {
+          "type": "Token_Eq",
+          "named": true
+        },
+        {
+          "type": "Token_Float",
+          "named": true
+        },
+        {
+          "type": "Token_Ident",
+          "named": true
+        },
+        {
+          "type": "Token_Imag",
+          "named": true
+        },
+        {
+          "type": "Token_Integer",
+          "named": true
+        },
+        {
+          "type": "Token_OpenParen",
+          "named": true
+        },
+        {
+          "type": "Token_Rune",
+          "named": true
+        },
+        {
+          "type": "Token_String",
+          "named": true
+        },
+        {
+          "type": "Token_context",
+          "named": true
+        },
+        {
+          "type": "Token_typeid",
+          "named": true
+        },
+        {
+          "type": "array_type",
+          "named": true
+        },
+        {
+          "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "bit_set_type",
+          "named": true
+        },
+        {
+          "type": "enum_type",
+          "named": true
+        },
+        {
+          "type": "index_expression",
+          "named": true
+        },
+        {
+          "type": "left_unary_expression",
+          "named": true
+        },
+        {
+          "type": "map_type",
+          "named": true
+        },
+        {
+          "type": "matrix_type",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        },
+        {
+          "type": "parapoly",
+          "named": true
+        },
+        {
+          "type": "pointer_type",
+          "named": true
+        },
+        {
+          "type": "pragma_identifier",
+          "named": true
+        },
+        {
+          "type": "proc_call",
+          "named": true
+        },
+        {
+          "type": "proc_group",
+          "named": true
+        },
+        {
+          "type": "proc_literal",
+          "named": true
+        },
+        {
+          "type": "proc_type",
+          "named": true
+        },
+        {
+          "type": "right_unary_expression",
+          "named": true
+        },
+        {
+          "type": "selector_expression",
+          "named": true
+        },
+        {
+          "type": "struct_type",
+          "named": true
+        },
+        {
+          "type": "ternary_expression",
+          "named": true
+        },
+        {
+          "type": "type_conversion",
+          "named": true
+        },
+        {
+          "type": "type_identifier",
+          "named": true
+        },
+        {
+          "type": "union_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "proc_call",
+    "named": true,
+    "fields": {
+      "arguments": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "initializer_list",
+            "named": true
+          }
+        ]
+      },
+      "caller": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "member_proc": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_Ident",
+            "named": true
+          }
+        ]
+      },
+      "procedure": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseParen",
+          "named": true
+        },
+        {
+          "type": "Token_Comma",
+          "named": true
+        },
+        {
+          "type": "Token_OpenParen",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "proc_group",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseBrace",
+          "named": true
+        },
+        {
+          "type": "Token_Comma",
+          "named": true
+        },
+        {
+          "type": "Token_Ident",
+          "named": true
+        },
+        {
+          "type": "Token_OpenBrace",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "proc_literal",
+    "named": true,
+    "fields": {
+      "parameters": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "parameter_list",
+            "named": true
+          }
+        ]
+      },
+      "result": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "keyword",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parameter_list",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseParen",
+          "named": true
+        },
+        {
+          "type": "Token_Comma",
+          "named": true
+        },
+        {
+          "type": "Token_Float",
+          "named": true
+        },
+        {
+          "type": "Token_Ident",
+          "named": true
+        },
+        {
+          "type": "Token_Imag",
+          "named": true
+        },
+        {
+          "type": "Token_Integer",
+          "named": true
+        },
+        {
+          "type": "Token_OpenParen",
+          "named": true
+        },
+        {
+          "type": "Token_Rune",
+          "named": true
+        },
+        {
+          "type": "Token_Semicolon",
+          "named": true
+        },
+        {
+          "type": "Token_String",
+          "named": true
+        },
+        {
+          "type": "Token_Undef",
+          "named": true
+        },
+        {
+          "type": "Token_context",
+          "named": true
+        },
+        {
+          "type": "Token_typeid",
+          "named": true
+        },
+        {
+          "type": "array_type",
+          "named": true
+        },
+        {
+          "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "bit_set_type",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "calling_convention",
+          "named": true
+        },
+        {
+          "type": "enum_type",
+          "named": true
+        },
+        {
+          "type": "index_expression",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "left_unary_expression",
+          "named": true
+        },
+        {
+          "type": "map_type",
+          "named": true
+        },
+        {
+          "type": "matrix_type",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        },
+        {
+          "type": "parapoly",
+          "named": true
+        },
+        {
+          "type": "pointer_type",
+          "named": true
+        },
+        {
+          "type": "proc_call",
+          "named": true
+        },
+        {
+          "type": "proc_group",
+          "named": true
+        },
+        {
+          "type": "proc_literal",
+          "named": true
+        },
+        {
+          "type": "proc_type",
+          "named": true
+        },
+        {
+          "type": "right_unary_expression",
+          "named": true
+        },
+        {
+          "type": "selector_expression",
+          "named": true
+        },
+        {
+          "type": "struct_type",
+          "named": true
+        },
+        {
+          "type": "ternary_expression",
+          "named": true
+        },
+        {
+          "type": "type_conversion",
+          "named": true
+        },
+        {
+          "type": "type_identifier",
+          "named": true
+        },
+        {
+          "type": "union_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "proc_type",
+    "named": true,
+    "fields": {
+      "parameters": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "parameter_list",
+            "named": true
+          }
+        ]
+      },
+      "result": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "keyword",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parameter_list",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "calling_convention",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "return_statement",
+    "named": true,
+    "fields": {
+      "value": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Comma",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "compound_literal",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "keyword",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "right_unary_expression",
+    "named": true,
+    "fields": {
+      "operand": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "operator": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "operator",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "selector_expression",
+    "named": true,
+    "fields": {
+      "field": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Question",
+            "named": true
+          }
+        ]
+      },
+      "parent": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_Period",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "single_assignment",
+    "named": true,
+    "fields": {
+      "lhs": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "rhs": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "compound_literal",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_Eq",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "Token_EOF",
+          "named": true
+        },
+        {
+          "type": "Token_Invalid",
+          "named": true
+        },
+        {
+          "type": "package_clause",
+          "named": true
+        },
+        {
+          "type": "top_level",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "struct_member",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_Colon",
+          "named": true
+        },
+        {
+          "type": "Token_Comma",
+          "named": true
+        },
+        {
+          "type": "Token_Ident",
+          "named": true
+        },
+        {
+          "type": "Token_String",
+          "named": true
+        },
+        {
+          "type": "Token_typeid",
+          "named": true
+        },
+        {
+          "type": "array_type",
+          "named": true
+        },
+        {
+          "type": "bit_set_type",
+          "named": true
+        },
+        {
+          "type": "enum_type",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "map_type",
+          "named": true
+        },
+        {
+          "type": "matrix_type",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        },
+        {
+          "type": "parapoly",
+          "named": true
+        },
+        {
+          "type": "pointer_type",
+          "named": true
+        },
+        {
+          "type": "proc_type",
+          "named": true
+        },
+        {
+          "type": "selector_expression",
+          "named": true
+        },
+        {
+          "type": "struct_type",
+          "named": true
+        },
+        {
+          "type": "type_identifier",
+          "named": true
+        },
+        {
+          "type": "union_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "struct_type",
+    "named": true,
+    "fields": {
+      "align_size": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_Integer",
+            "named": true
+          }
+        ]
+      },
+      "parameters": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "parameter_list",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseBrace",
+          "named": true
+        },
+        {
+          "type": "Token_CloseParen",
+          "named": true
+        },
+        {
+          "type": "Token_Comma",
+          "named": true
+        },
+        {
+          "type": "Token_Float",
+          "named": true
+        },
+        {
+          "type": "Token_Ident",
+          "named": true
+        },
+        {
+          "type": "Token_Imag",
+          "named": true
+        },
+        {
+          "type": "Token_Integer",
+          "named": true
+        },
+        {
+          "type": "Token_OpenBrace",
+          "named": true
+        },
+        {
+          "type": "Token_OpenParen",
+          "named": true
+        },
+        {
+          "type": "Token_Rune",
+          "named": true
+        },
+        {
+          "type": "Token_String",
+          "named": true
+        },
+        {
+          "type": "Token_context",
+          "named": true
+        },
+        {
+          "type": "Token_typeid",
+          "named": true
+        },
+        {
+          "type": "array_type",
+          "named": true
+        },
+        {
+          "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "bit_set_type",
+          "named": true
+        },
+        {
+          "type": "enum_type",
+          "named": true
+        },
+        {
+          "type": "index_expression",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "left_unary_expression",
+          "named": true
+        },
+        {
+          "type": "map_type",
+          "named": true
+        },
+        {
+          "type": "matrix_type",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        },
+        {
+          "type": "parapoly",
+          "named": true
+        },
+        {
+          "type": "pointer_type",
+          "named": true
+        },
+        {
+          "type": "proc_call",
+          "named": true
+        },
+        {
+          "type": "proc_group",
+          "named": true
+        },
+        {
+          "type": "proc_literal",
+          "named": true
+        },
+        {
+          "type": "proc_type",
+          "named": true
+        },
+        {
+          "type": "right_unary_expression",
+          "named": true
+        },
+        {
+          "type": "selector_expression",
+          "named": true
+        },
+        {
+          "type": "struct_member",
+          "named": true
+        },
+        {
+          "type": "struct_type",
+          "named": true
+        },
+        {
+          "type": "ternary_expression",
+          "named": true
+        },
+        {
+          "type": "type_conversion",
+          "named": true
+        },
+        {
+          "type": "type_identifier",
+          "named": true
+        },
+        {
+          "type": "union_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "switch_statement",
+    "named": true,
+    "fields": {
+      "bind": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_Ident",
+            "named": true
+          }
+        ]
+      },
+      "body": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_CloseBrace",
+            "named": true
+          },
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenBrace",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_Semicolon",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_fallthrough",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "assignment_statement",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "block_statement",
+            "named": true
+          },
+          {
+            "type": "break_statement",
+            "named": true
+          },
+          {
+            "type": "case_statement",
+            "named": true
+          },
+          {
+            "type": "continue_statement",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "defer_statement",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "for_statement",
+            "named": true
+          },
+          {
+            "type": "foreign_block",
+            "named": true
+          },
+          {
+            "type": "if_statement",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "keyword",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "pragma",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "return_statement",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "switch_statement",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "using_statement",
+            "named": true
+          }
+        ]
+      },
+      "expression": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "initializer": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "assignment_statement",
+            "named": true
+          },
+          {
+            "type": "break_statement",
+            "named": true
+          },
+          {
+            "type": "continue_statement",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "pragma",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "return_statement",
+            "named": true
+          }
+        ]
+      },
+      "label": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_Colon",
+            "named": true
+          },
+          {
+            "type": "label_identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_Semicolon",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ternary_expression",
+    "named": true,
+    "fields": {
+      "condition": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "if_false": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      },
+      "if_true": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "top_level",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseBrace",
+          "named": true
+        },
+        {
+          "type": "Token_CloseParen",
+          "named": true
+        },
+        {
+          "type": "Token_Float",
+          "named": true
+        },
+        {
+          "type": "Token_Ident",
+          "named": true
+        },
+        {
+          "type": "Token_Imag",
+          "named": true
+        },
+        {
+          "type": "Token_Integer",
+          "named": true
+        },
+        {
+          "type": "Token_OpenBrace",
+          "named": true
+        },
+        {
+          "type": "Token_OpenParen",
+          "named": true
+        },
+        {
+          "type": "Token_Rune",
+          "named": true
+        },
+        {
+          "type": "Token_String",
+          "named": true
+        },
+        {
+          "type": "Token_context",
+          "named": true
+        },
+        {
+          "type": "Token_typeid",
+          "named": true
+        },
+        {
+          "type": "Token_when",
+          "named": true
+        },
+        {
+          "type": "array_type",
+          "named": true
+        },
+        {
+          "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "bit_set_type",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "enum_type",
+          "named": true
+        },
+        {
+          "type": "import_declaration",
+          "named": true
+        },
+        {
+          "type": "index_expression",
+          "named": true
+        },
+        {
+          "type": "left_unary_expression",
+          "named": true
+        },
+        {
+          "type": "map_type",
+          "named": true
+        },
+        {
+          "type": "matrix_type",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        },
+        {
+          "type": "parapoly",
+          "named": true
+        },
+        {
+          "type": "pointer_type",
+          "named": true
+        },
+        {
+          "type": "pragma",
+          "named": true
+        },
+        {
+          "type": "proc_call",
+          "named": true
+        },
+        {
+          "type": "proc_group",
+          "named": true
+        },
+        {
+          "type": "proc_literal",
+          "named": true
+        },
+        {
+          "type": "proc_type",
+          "named": true
+        },
+        {
+          "type": "right_unary_expression",
+          "named": true
+        },
+        {
+          "type": "selector_expression",
+          "named": true
+        },
+        {
+          "type": "struct_type",
+          "named": true
+        },
+        {
+          "type": "ternary_expression",
+          "named": true
+        },
+        {
+          "type": "type_conversion",
+          "named": true
+        },
+        {
+          "type": "type_identifier",
+          "named": true
+        },
+        {
+          "type": "union_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "type_conversion",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseParen",
+          "named": true
+        },
+        {
+          "type": "Token_Float",
+          "named": true
+        },
+        {
+          "type": "Token_Ident",
+          "named": true
+        },
+        {
+          "type": "Token_Imag",
+          "named": true
+        },
+        {
+          "type": "Token_Integer",
+          "named": true
+        },
+        {
+          "type": "Token_OpenParen",
+          "named": true
+        },
+        {
+          "type": "Token_Rune",
+          "named": true
+        },
+        {
+          "type": "Token_String",
+          "named": true
+        },
+        {
+          "type": "Token_context",
+          "named": true
+        },
+        {
+          "type": "Token_typeid",
+          "named": true
+        },
+        {
+          "type": "array_type",
+          "named": true
+        },
+        {
+          "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "bit_set_type",
+          "named": true
+        },
+        {
+          "type": "enum_type",
+          "named": true
+        },
+        {
+          "type": "index_expression",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "left_unary_expression",
+          "named": true
+        },
+        {
+          "type": "map_type",
+          "named": true
+        },
+        {
+          "type": "matrix_type",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        },
+        {
+          "type": "parapoly",
+          "named": true
+        },
+        {
+          "type": "pointer_type",
+          "named": true
+        },
+        {
+          "type": "proc_call",
+          "named": true
+        },
+        {
+          "type": "proc_group",
+          "named": true
+        },
+        {
+          "type": "proc_literal",
+          "named": true
+        },
+        {
+          "type": "proc_type",
+          "named": true
+        },
+        {
+          "type": "right_unary_expression",
+          "named": true
+        },
+        {
+          "type": "selector_expression",
+          "named": true
+        },
+        {
+          "type": "struct_type",
+          "named": true
+        },
+        {
+          "type": "ternary_expression",
+          "named": true
+        },
+        {
+          "type": "type_conversion",
+          "named": true
+        },
+        {
+          "type": "type_identifier",
+          "named": true
+        },
+        {
+          "type": "union_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "union_type",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_CloseBrace",
+          "named": true
+        },
+        {
+          "type": "Token_Comma",
+          "named": true
+        },
+        {
+          "type": "Token_OpenBrace",
+          "named": true
+        },
+        {
+          "type": "Token_typeid",
+          "named": true
+        },
+        {
+          "type": "array_type",
+          "named": true
+        },
+        {
+          "type": "bit_set_type",
+          "named": true
+        },
+        {
+          "type": "enum_type",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "map_type",
+          "named": true
+        },
+        {
+          "type": "matrix_type",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        },
+        {
+          "type": "parameter_list",
+          "named": true
+        },
+        {
+          "type": "parapoly",
+          "named": true
+        },
+        {
+          "type": "pointer_type",
+          "named": true
+        },
+        {
+          "type": "proc_type",
+          "named": true
+        },
+        {
+          "type": "selector_expression",
+          "named": true
+        },
+        {
+          "type": "struct_type",
+          "named": true
+        },
+        {
+          "type": "type_identifier",
+          "named": true
+        },
+        {
+          "type": "union_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "using_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Token_Ident",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "selector_expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Token_At",
+    "named": true
+  },
+  {
+    "type": "Token_CloseBrace",
+    "named": true
+  },
+  {
+    "type": "Token_CloseBracket",
+    "named": true
+  },
+  {
+    "type": "Token_CloseParen",
+    "named": true
+  },
+  {
+    "type": "Token_Colon",
+    "named": true
+  },
+  {
+    "type": "Token_Comma",
+    "named": true
+  },
+  {
+    "type": "Token_Comment",
+    "named": true
+  },
+  {
+    "type": "Token_EOF",
+    "named": true
+  },
+  {
+    "type": "Token_Eq",
+    "named": true
+  },
+  {
+    "type": "Token_Float",
+    "named": true
+  },
+  {
+    "type": "Token_Hash",
+    "named": true
+  },
+  {
+    "type": "Token_Ident",
+    "named": true
+  },
+  {
+    "type": "Token_Imag",
+    "named": true
+  },
+  {
+    "type": "Token_Integer",
+    "named": true
+  },
+  {
+    "type": "Token_Invalid",
+    "named": true
+  },
+  {
+    "type": "Token_OpenBrace",
+    "named": true
+  },
+  {
+    "type": "Token_OpenBracket",
+    "named": true
+  },
+  {
+    "type": "Token_OpenParen",
+    "named": true
+  },
+  {
+    "type": "Token_Period",
+    "named": true
+  },
+  {
+    "type": "Token_Question",
+    "named": true
+  },
+  {
+    "type": "Token_Rune",
+    "named": true
+  },
+  {
+    "type": "Token_Semicolon",
+    "named": true
+  },
+  {
+    "type": "Token_String",
+    "named": true
+  },
+  {
+    "type": "Token_Undef",
+    "named": true
+  },
+  {
+    "type": "Token_context",
+    "named": true
+  },
+  {
+    "type": "Token_fallthrough",
+    "named": true
+  },
+  {
+    "type": "Token_foreign",
+    "named": true
+  },
+  {
+    "type": "Token_package",
+    "named": true
+  },
+  {
+    "type": "Token_typeid",
+    "named": true
+  },
+  {
+    "type": "Token_when",
+    "named": true
+  },
+  {
+    "type": "calling_convention",
+    "named": true
+  },
+  {
+    "type": "decl_identifier",
+    "named": true
+  },
+  {
+    "type": "field_identifier",
+    "named": true
+  },
+  {
+    "type": "keyword",
+    "named": true
+  },
+  {
+    "type": "label_identifier",
+    "named": true
+  },
+  {
+    "type": "operator",
+    "named": true
+  },
+  {
+    "type": "package_identifier",
+    "named": true
+  },
+  {
+    "type": "pragma_identifier",
+    "named": true
+  },
+  {
+    "type": "type_identifier",
+    "named": true
+  },
+  {
+    "type": "var_identifier",
+    "named": true
+  }
+]

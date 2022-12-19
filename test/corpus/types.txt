@@ -33,75 +33,38 @@ structs :: {
 --------------------------------------------------------------------------------
 
 (source_file
-  (package_clause
-    (keyword)
-    (package_identifier))
-  (const_declaration
-    (const_identifier)
-    (operator)
-    (operator)
-    (compound_literal
-      (initializer_list
-        (type_identifier)
-        (type_identifier)
-        (type_identifier)
-        (type_identifier)
-        (type_identifier))))
-  (const_declaration
-    (const_identifier)
-    (operator)
-    (operator)
-    (compound_literal
-      (initializer_list
-        (array_type
-          (type_identifier))
-        (array_type
-          (operator)
-          (type_identifier))
-        (array_type
-          (int_literal)
-          (type_identifier))
-        (array_type
-          (keyword)
-          (pointer_type
-            (operator)
-            (type_identifier))))))
-  (const_declaration
-    (const_identifier)
-    (operator)
-    (operator)
-    (compound_literal
-      (initializer_list
-        (map_type
-          (keyword)
-          (type_identifier)
-          (type_identifier))
-        (map_type
-          (keyword)
-          (array_type
-            (int_literal)
-            (type_identifier))
-          (array_type
-            (int_literal)
-            (type_identifier))))))
-  (const_declaration
-    (const_identifier)
-    (operator)
-    (operator)
-    (compound_literal
-      (initializer_list
-        (struct_type
-          (keyword))
-        (struct_type
-          (keyword)
-          (identifier)
-          (identifier)
-          (type_identifier))
-        (struct_type
-          (keyword)
-          (identifier)
-          (array_type
-            (keyword)
-            (type_identifier))
-          (identifier)
-          (type_identifier))))))
+ (package_clause (Token_package) (package_identifier))
+ (Token_Semicolon)
+ (top_level
+  (declaration (decl_identifier) (operator) (operator) (compound_literal (Token_OpenBrace) (Token_Semicolon)
+	 (initializer_list
+	  (Token_Ident) (Token_Comma) (Token_Ident) (Token_Comma)
+		(Token_Ident) (Token_Comma) (Token_Ident) (Token_Comma)
+		(Token_Ident) (Token_Comma))
+	 (Token_CloseBrace))))
+	 (Token_Semicolon)
+ (top_level
+  (declaration (decl_identifier) (operator) (operator) (compound_literal (Token_OpenBrace) (Token_Semicolon)
+	 (initializer_list
+	  (array_type (array_type_prefix (Token_OpenBracket) (Token_CloseBracket)) (type_identifier)) (Token_Comma)
+		(array_type (array_type_prefix (Token_OpenBracket) (operator) (Token_CloseBracket)) (type_identifier)) (Token_Comma)
+		(array_type (array_type_prefix (Token_OpenBracket) (Token_Integer) (Token_CloseBracket)) (type_identifier)) (Token_Comma)
+		(array_type (array_type_prefix (Token_OpenBracket) (keyword) (Token_CloseBracket)) (pointer_type (operator) (type_identifier))) (Token_Comma))
+	 (Token_CloseBrace))))
+	 (Token_Semicolon)
+ (top_level
+  (declaration (decl_identifier) (operator) (operator) (compound_literal (Token_OpenBrace) (Token_Semicolon)
+	 (initializer_list
+	  (map_type (keyword) (Token_OpenBracket) (type_identifier) (Token_CloseBracket) (type_identifier)) (Token_Comma)
+		(map_type (keyword) (Token_OpenBracket)
+		 (array_type (array_type_prefix (Token_OpenBracket) (Token_Integer) (Token_CloseBracket)) (type_identifier)) (Token_CloseBracket)
+		 (array_type (array_type_prefix (Token_OpenBracket) (Token_Integer) (Token_CloseBracket)) (type_identifier))) (Token_Comma))
+	 (Token_CloseBrace))))
+	 (Token_Semicolon)
+ (top_level
+  (declaration (decl_identifier) (operator) (operator) (compound_literal (Token_OpenBrace) (Token_Semicolon)
+	 (initializer_list
+	  (struct_type (keyword) (Token_OpenBrace) (Token_CloseBrace)) (Token_Comma)
+		(struct_type (keyword) (Token_OpenBrace) (struct_member (Token_Ident) (Token_Comma) (Token_Ident) (Token_Colon) (type_identifier)) (Token_CloseBrace)) (Token_Comma)
+		(struct_type (keyword) (Token_OpenBrace) (struct_member (Token_Ident) (Token_Colon) (array_type (array_type_prefix (Token_OpenBracket) (keyword) (Token_CloseBracket)) (type_identifier))) (Token_Comma) (struct_member (Token_Ident) (Token_Colon) (type_identifier)) (Token_CloseBrace)) (Token_Comma))
+		(Token_CloseBrace)))) (Token_Semicolon)) 

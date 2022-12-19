@@ -13,29 +13,7 @@ main :: proc () {
 
 --------------------------------------------------------------------------------
 
-(source_file
-  (package_clause
-    (keyword)
-    (package_identifier))
-  (const_declaration
-    (const_identifier)
-    (operator)
-    (operator)
-    (proc_literal
-      (keyword)
-      (parameter_list)
-      (block
-        (if_statement
-          (keyword)
-          (identifier)
-          (block)
-          (keyword)
-          (if_statement
-            (keyword)
-            (identifier)
-            (block)
-            (keyword)
-            (block)))))))
+(source_file (package_clause (Token_package) (package_identifier)) (Token_Semicolon) (top_level (declaration (decl_identifier) (operator) (operator) (proc_literal (keyword) (parameter_list (Token_OpenParen) (Token_CloseParen)) (block (Token_OpenBrace) (Token_Semicolon) (if_statement (keyword) (Token_Ident) (block (Token_OpenBrace) (Token_Semicolon) (Token_CloseBrace)) (keyword) (if_statement (keyword) (Token_Ident) (block (Token_OpenBrace) (Token_Semicolon) (Token_CloseBrace)) (keyword) (block (Token_OpenBrace) (Token_Semicolon) (Token_CloseBrace)))) (Token_Semicolon) (Token_CloseBrace))))) (Token_Semicolon)) 
 
 ================================================================================
 Ranged for loop
@@ -50,24 +28,7 @@ main :: proc () {
 
 --------------------------------------------------------------------------------
 
-(source_file
-  (package_clause
-    (keyword)
-    (package_identifier))
-  (const_declaration
-    (const_identifier)
-    (operator)
-    (operator)
-    (proc_literal
-      (keyword)
-      (parameter_list)
-      (block
-        (for_statement
-          (keyword)
-          (identifier)
-          (keyword)
-          (identifier)
-          (block))))))
+(source_file (package_clause (Token_package) (package_identifier)) (Token_Semicolon) (top_level (declaration (decl_identifier) (operator) (operator) (proc_literal (keyword) (parameter_list (Token_OpenParen) (Token_CloseParen)) (block (Token_OpenBrace) (Token_Semicolon) (for_statement (keyword) (Token_Ident) (keyword) (Token_Ident) (block (Token_OpenBrace) (Token_Semicolon) (Token_CloseBrace))) (Token_Semicolon) (Token_CloseBrace))))) (Token_Semicolon)) 
 
 ================================================================================
 C-style for loop with empty clause
@@ -82,21 +43,7 @@ main :: proc () {
 
 --------------------------------------------------------------------------------
 
-(source_file
-  (package_clause
-    (keyword)
-    (package_identifier))
-  (const_declaration
-    name: (const_identifier)
-    (operator)
-    (operator)
-    value: (proc_literal
-      (keyword)
-      parameters: (parameter_list)
-      (block
-        (for_statement
-          (keyword)
-          body: (block))))))
+(source_file (package_clause (Token_package) (package_identifier)) (Token_Semicolon) (top_level (declaration (decl_identifier) (operator) (operator) (proc_literal (keyword) (parameter_list (Token_OpenParen) (Token_CloseParen)) (block (Token_OpenBrace) (Token_Semicolon) (for_statement (keyword) (Token_Semicolon) (Token_Semicolon) (block (Token_OpenBrace) (Token_Semicolon) (Token_CloseBrace))) (Token_Semicolon) (Token_CloseBrace))))) (Token_Semicolon))
 
 ================================================================================
 C-style for loop with full clause
@@ -111,34 +58,7 @@ main :: proc () {
 
 --------------------------------------------------------------------------------
 
-(source_file
-  (package_clause
-    (keyword)
-    (package_identifier))
-  (const_declaration
-    name: (const_identifier)
-    (operator)
-    (operator)
-    value: (proc_literal
-      (keyword)
-      parameters: (parameter_list)
-      (block
-        (for_statement
-          (keyword)
-          initializer: (var_declaration
-            name: (identifier)
-            (operator)
-            (operator)
-            value: (int_literal))
-          condition: (binary_expression
-            left: (identifier)
-            operator: (operator)
-            right: (int_literal))
-          update: (assignment_statement
-            lhs: (identifier)
-            (operator)
-            rhs: (int_literal))
-          body: (block))))))
+(source_file (package_clause (Token_package) (package_identifier)) (Token_Semicolon) (top_level (declaration (decl_identifier) (operator) (operator) (proc_literal (keyword) (parameter_list (Token_OpenParen) (Token_CloseParen)) (block (Token_OpenBrace) (Token_Semicolon) (for_statement (keyword) (declaration (decl_identifier) (operator) (operator) (Token_Integer)) (Token_Semicolon) (binary_expression (Token_Ident) (operator) (Token_Integer)) (Token_Semicolon) (assignment_statement (Token_Ident) (operator) (Token_Integer)) (block (Token_OpenBrace) (Token_Semicolon) (Token_CloseBrace))) (Token_Semicolon) (Token_CloseBrace))))) (Token_Semicolon)) 
 
 ================================================================================
 C-style for loop with only condition
@@ -153,28 +73,7 @@ main :: proc () {
 
 --------------------------------------------------------------------------------
 
-(source_file
-  (package_clause
-    (keyword)
-    (package_identifier))
-  (const_declaration
-    name: (const_identifier)
-    (operator)
-    (operator)
-    value: (proc_literal
-      (keyword)
-      parameters: (parameter_list)
-      (block
-        (for_statement
-          (keyword)
-          condition: (binary_expression
-            left: (binary_expression
-              left: (int_literal)
-              operator: (operator)
-              right: (identifier))
-            operator: (operator)
-            right: (int_literal))
-          body: (block))))))
+(source_file (package_clause (Token_package) (package_identifier)) (Token_Semicolon) (top_level (declaration (decl_identifier) (operator) (operator) (proc_literal (keyword) (parameter_list (Token_OpenParen) (Token_CloseParen)) (block (Token_OpenBrace) (Token_Semicolon) (for_statement (keyword) (binary_expression (binary_expression (Token_Integer) (operator) (Token_Ident)) (operator) (Token_Integer)) (block (Token_OpenBrace) (Token_Semicolon) (Token_CloseBrace))) (Token_Semicolon) (Token_CloseBrace))))) (Token_Semicolon)) 
 
 ================================================================================
 C-style for loop with condition and update
@@ -189,29 +88,7 @@ main :: proc () {
 
 --------------------------------------------------------------------------------
 
-(source_file
-  (package_clause
-    (keyword)
-    (package_identifier))
-  (const_declaration
-    name: (const_identifier)
-    (operator)
-    (operator)
-    value: (proc_literal
-      (keyword)
-      parameters: (parameter_list)
-      (block
-        (for_statement
-          (keyword)
-          condition: (binary_expression
-            left: (identifier)
-            operator: (operator)
-            right: (int_literal))
-          update: (assignment_statement
-            lhs: (identifier)
-            (operator)
-            rhs: (int_literal))
-          body: (block))))))
+(source_file (package_clause (Token_package) (package_identifier)) (Token_Semicolon) (top_level (declaration (decl_identifier) (operator) (operator) (proc_literal (keyword) (parameter_list (Token_OpenParen) (Token_CloseParen)) (block (Token_OpenBrace) (Token_Semicolon) (for_statement (keyword) (Token_Semicolon) (binary_expression (Token_Ident) (operator) (Token_Integer)) (Token_Semicolon) (assignment_statement (Token_Ident) (operator) (Token_Integer)) (block (Token_OpenBrace) (Token_Semicolon) (Token_CloseBrace))) (Token_Semicolon) (Token_CloseBrace))))) (Token_Semicolon)) 
 
 ================================================================================
 C-style for loop with only initializer
@@ -226,26 +103,7 @@ main :: proc () {
 
 --------------------------------------------------------------------------------
 
-(source_file
-  (package_clause
-    (keyword)
-    (package_identifier))
-  (const_declaration
-    name: (const_identifier)
-    (operator)
-    (operator)
-    value: (proc_literal
-      (keyword)
-      parameters: (parameter_list)
-      (block
-        (for_statement
-          (keyword)
-          initializer: (var_declaration
-            name: (identifier)
-            (operator)
-            (operator)
-            value: (int_literal))
-          body: (block))))))
+(source_file (package_clause (Token_package) (package_identifier)) (Token_Semicolon) (top_level (declaration (decl_identifier) (operator) (operator) (proc_literal (keyword) (parameter_list (Token_OpenParen) (Token_CloseParen)) (block (Token_OpenBrace) (Token_Semicolon) (for_statement (keyword) (declaration (decl_identifier) (operator) (operator) (Token_Integer)) (Token_Semicolon) (Token_Semicolon) (block (Token_OpenBrace) (Token_Semicolon) (Token_CloseBrace))) (Token_Semicolon) (Token_CloseBrace))))) (Token_Semicolon)) 
 
 ================================================================================
 C-style for loop with initializer and update clause
@@ -260,27 +118,4 @@ main :: proc () {
 
 --------------------------------------------------------------------------------
 
-(source_file
-  (package_clause
-    (keyword)
-    (package_identifier))
-  (const_declaration
-    name: (const_identifier)
-    (operator)
-    (operator)
-    value: (proc_literal
-      (keyword)
-      parameters: (parameter_list)
-      (block
-        (for_statement
-          (keyword)
-          initializer: (var_declaration
-            name: (identifier)
-            (operator)
-            (operator)
-            value: (int_literal))
-          update: (assignment_statement
-            lhs: (identifier)
-            (operator)
-            rhs: (int_literal))
-          body: (block))))))
+(source_file (package_clause (Token_package) (package_identifier)) (Token_Semicolon) (top_level (declaration (decl_identifier) (operator) (operator) (proc_literal (keyword) (parameter_list (Token_OpenParen) (Token_CloseParen)) (block (Token_OpenBrace) (Token_Semicolon) (for_statement (keyword) (declaration (decl_identifier) (operator) (operator) (Token_Integer)) (Token_Semicolon) (Token_Semicolon) (assignment_statement (Token_Ident) (operator) (Token_Integer)) (block (Token_OpenBrace) (Token_Semicolon) (Token_CloseBrace))) (Token_Semicolon) (Token_CloseBrace))))) (Token_Semicolon)) 

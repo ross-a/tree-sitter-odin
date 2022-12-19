@@ -78,7 +78,7 @@ bool tree_sitter_odin_external_scanner_scan(void *payload, TSLexer *lexer,
 			t->curr_file_id = 1;
 			continue;
 		}
-		if (tok.kind == Token_Invalid && !eof)
+		if ((tok.kind == Token_Invalid || tok.kind == Token_EOF) && !eof)
 			continue;
 			
 		break;

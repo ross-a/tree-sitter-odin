@@ -126,6 +126,10 @@
             "named": true
           },
           {
+            "type": "Token_Period",
+            "named": true
+          },
+          {
             "type": "Token_Rune",
             "named": true
           },
@@ -288,6 +292,10 @@
             "named": true
           },
           {
+            "type": "Token_Period",
+            "named": true
+          },
+          {
             "type": "Token_Rune",
             "named": true
           },
@@ -427,6 +435,10 @@
           },
           {
             "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Period",
             "named": true
           },
           {
@@ -584,6 +596,10 @@
             "named": true
           },
           {
+            "type": "Token_Period",
+            "named": true
+          },
+          {
             "type": "Token_Rune",
             "named": true
           },
@@ -725,6 +741,10 @@
           },
           {
             "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Period",
             "named": true
           },
           {
@@ -931,6 +951,10 @@
           },
           {
             "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Period",
             "named": true
           },
           {
@@ -1155,6 +1179,10 @@
         },
         {
           "type": "Token_OpenParen",
+          "named": true
+        },
+        {
+          "type": "Token_Period",
           "named": true
         },
         {
@@ -1407,6 +1435,10 @@
         },
         {
           "type": "Token_OpenParen",
+          "named": true
+        },
+        {
+          "type": "Token_Period",
           "named": true
         },
         {
@@ -1762,6 +1794,10 @@
             "named": true
           },
           {
+            "type": "Token_Period",
+            "named": true
+          },
+          {
             "type": "Token_Rune",
             "named": true
           },
@@ -1977,6 +2013,10 @@
           },
           {
             "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Period",
             "named": true
           },
           {
@@ -2277,6 +2317,10 @@
             "named": true
           },
           {
+            "type": "Token_Period",
+            "named": true
+          },
+          {
             "type": "Token_Rune",
             "named": true
           },
@@ -2475,6 +2519,10 @@
             "named": true
           },
           {
+            "type": "Token_Period",
+            "named": true
+          },
+          {
             "type": "Token_Rune",
             "named": true
           },
@@ -2664,6 +2712,10 @@
           },
           {
             "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Period",
             "named": true
           },
           {
@@ -2898,6 +2950,10 @@
             "named": true
           },
           {
+            "type": "Token_Period",
+            "named": true
+          },
+          {
             "type": "Token_Rune",
             "named": true
           },
@@ -3029,6 +3085,10 @@
           },
           {
             "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Period",
             "named": true
           },
           {
@@ -3230,11 +3290,11 @@
             "named": true
           },
           {
-            "type": "Token_Rune",
+            "type": "Token_Period",
             "named": true
           },
           {
-            "type": "Token_Semicolon",
+            "type": "Token_Rune",
             "named": true
           },
           {
@@ -3429,6 +3489,10 @@
           },
           {
             "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Period",
             "named": true
           },
           {
@@ -3696,6 +3760,10 @@
             "named": true
           },
           {
+            "type": "Token_Period",
+            "named": true
+          },
+          {
             "type": "Token_Rune",
             "named": true
           },
@@ -3834,6 +3902,10 @@
             "named": true
           },
           {
+            "type": "Token_Period",
+            "named": true
+          },
+          {
             "type": "Token_Rune",
             "named": true
           },
@@ -3968,6 +4040,10 @@
             "named": true
           },
           {
+            "type": "Token_Period",
+            "named": true
+          },
+          {
             "type": "Token_Rune",
             "named": true
           },
@@ -4099,6 +4175,10 @@
           },
           {
             "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Period",
             "named": true
           },
           {
@@ -4264,6 +4344,10 @@
           "named": true
         },
         {
+          "type": "Token_Period",
+          "named": true
+        },
+        {
           "type": "Token_Rune",
           "named": true
         },
@@ -4408,6 +4492,10 @@
           },
           {
             "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Period",
             "named": true
           },
           {
@@ -4794,6 +4882,10 @@
           "named": true
         },
         {
+          "type": "Token_Period",
+          "named": true
+        },
+        {
           "type": "Token_Rune",
           "named": true
         },
@@ -5048,6 +5140,10 @@
             "named": true
           },
           {
+            "type": "Token_Period",
+            "named": true
+          },
+          {
             "type": "Token_Rune",
             "named": true
           },
@@ -5239,6 +5335,10 @@
             "named": true
           },
           {
+            "type": "Token_Period",
+            "named": true
+          },
+          {
             "type": "Token_Rune",
             "named": true
           },
@@ -5380,6 +5480,10 @@
           },
           {
             "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Period",
             "named": true
           },
           {
@@ -5647,6 +5751,10 @@
           "named": true
         },
         {
+          "type": "Token_Period",
+          "named": true
+        },
+        {
           "type": "Token_Rune",
           "named": true
         },
@@ -5800,6 +5908,10 @@
             "named": true
           },
           {
+            "type": "Token_Period",
+            "named": true
+          },
+          {
             "type": "Token_Rune",
             "named": true
           },
@@ -5941,6 +6053,10 @@
           },
           {
             "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Period",
             "named": true
           },
           {
@@ -6222,6 +6338,10 @@
           "named": true
         },
         {
+          "type": "Token_Period",
+          "named": true
+        },
+        {
           "type": "Token_Rune",
           "named": true
         },
@@ -6489,6 +6609,10 @@
             "named": true
           },
           {
+            "type": "Token_Period",
+            "named": true
+          },
+          {
             "type": "Token_Rune",
             "named": true
           },
@@ -6640,6 +6764,10 @@
           },
           {
             "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Period",
             "named": true
           },
           {
@@ -6807,6 +6935,10 @@
             "named": true
           },
           {
+            "type": "Token_Period",
+            "named": true
+          },
+          {
             "type": "Token_Rune",
             "named": true
           },
@@ -6957,6 +7089,10 @@
             "named": true
           },
           {
+            "type": "Token_Period",
+            "named": true
+          },
+          {
             "type": "Token_Rune",
             "named": true
           },
@@ -7088,6 +7224,10 @@
           },
           {
             "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Period",
             "named": true
           },
           {
@@ -7392,6 +7532,10 @@
           "named": true
         },
         {
+          "type": "Token_Period",
+          "named": true
+        },
+        {
           "type": "Token_Rune",
           "named": true
         },
@@ -7554,6 +7698,10 @@
           },
           {
             "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Period",
             "named": true
           },
           {
@@ -7759,6 +7907,10 @@
             "named": true
           },
           {
+            "type": "Token_Period",
+            "named": true
+          },
+          {
             "type": "Token_Rune",
             "named": true
           },
@@ -7961,6 +8113,10 @@
             "named": true
           },
           {
+            "type": "Token_Period",
+            "named": true
+          },
+          {
             "type": "Token_Rune",
             "named": true
           },
@@ -8095,6 +8251,10 @@
             "named": true
           },
           {
+            "type": "Token_Period",
+            "named": true
+          },
+          {
             "type": "Token_Rune",
             "named": true
           },
@@ -8226,6 +8386,10 @@
           },
           {
             "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Period",
             "named": true
           },
           {
@@ -8391,6 +8555,10 @@
           "named": true
         },
         {
+          "type": "Token_Period",
+          "named": true
+        },
+        {
           "type": "Token_Rune",
           "named": true
         },
@@ -8543,6 +8711,10 @@
         },
         {
           "type": "Token_OpenParen",
+          "named": true
+        },
+        {
+          "type": "Token_Period",
           "named": true
         },
         {

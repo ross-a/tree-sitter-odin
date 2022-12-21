@@ -400,7 +400,7 @@ module.exports = grammar({
 
     _expression: $ => prec.right(1, choice(
 			$.Token_Integer,
-			choice($.Token_Float, seq($.Token_Integer, $.Token_Float)),
+			choice($.Token_Float, seq($.Token_Integer, $.Token_Float), seq($.Token_Integer, $.Token_Period)),
 			$.Token_Imag,
 			$.Token_Rune,
 			$.Token_String,
@@ -592,8 +592,8 @@ module.exports = grammar({
       )),
       field('condition', $._expression),
       field('if_true', choice(
-        seq(alias($.Token_do, $.keyword), $._statement, optional($.Token_Semicolon)),
-        $.block,
+        seq(alias($.Token_do, $.keyword), $._statement, ),
+				$.block,
       )),
       optional(seq(
         alias($.Token_else, $.keyword),

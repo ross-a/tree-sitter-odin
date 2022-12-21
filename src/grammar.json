@@ -1778,6 +1778,19 @@
                     "name": "Token_Float"
                   }
                 ]
+              },
+              {
+                "type": "SEQ",
+                "members": [
+                  {
+                    "type": "SYMBOL",
+                    "name": "Token_Integer"
+                  },
+                  {
+                    "type": "SYMBOL",
+                    "name": "Token_Period"
+                  }
+                ]
               }
             ]
           },
@@ -3339,18 +3352,6 @@
                     {
                       "type": "SYMBOL",
                       "name": "_statement"
-                    },
-                    {
-                      "type": "CHOICE",
-                      "members": [
-                        {
-                          "type": "SYMBOL",
-                          "name": "Token_Semicolon"
-                        },
-                        {
-                          "type": "BLANK"
-                        }
-                      ]
                     }
                   ]
                 },

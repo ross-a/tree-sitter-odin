@@ -65,7 +65,7 @@ bool tree_sitter_odin_external_scanner_scan(void *payload, TSLexer *lexer,
 
 	if (start) {
 		t->line_count = 1;
-		t->curr_file_id = -1; // using to remove possible first semicolon
+		t->curr_file_id = -1;
 		t->curr_rune = lexer->lookahead;
 	}
 
@@ -78,21 +78,26 @@ bool tree_sitter_odin_external_scanner_scan(void *payload, TSLexer *lexer,
 			t->curr_file_id = 1;
 			continue;
 		}
-		if ((tok.kind == Token_Invalid || tok.kind == Token_EOF) && !eof)
+		if (tok.kind == Token_EOF && !eof) {
 			continue;
-			
+		}
+		if (tok.kind == Token_Invalid) {
+			return false; // skip invalid to prevent inf loop
+		}
+		
 		break;
 	}
 
 	lexer->result_symbol = tok.kind;
 
-	//if (!valid_symbols[tok.kind]) {
-	//	printf("got unexpected %s (%d, %d)\n", token_strings[tok.kind], t->line_count, t->column_minus_one);
-	//	for (int i=0; i<Token_Count; i++) {
-	//		if (valid_symbols[i]) {
-	//			printf("%d - %s\n", i, token_strings[i]);
-	//		}
-	//	}
-	//}	
+	if (!valid_symbols[tok.kind]) {
+		printf("got unexpected %s (%d, %d)\n", token_strings[tok.kind], t->line_count, t->column_minus_one);
+		for (int i=0; i<Token_Count; i++) {
+			if (valid_symbols[i]) {
+				printf("%d - %s\n", i, token_strings[i]);
+			}
+		}
+		return false;
+	}	
 	return !eof;
 }

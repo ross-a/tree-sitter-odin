@@ -160,7 +160,7 @@ strings :: proc()
 types :: proc()
 {
 
-	a : (int);
+	a : (int)
 
 	a = 3;
 	fmt.println(a);

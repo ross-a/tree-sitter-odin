@@ -1,4 +1,5 @@
 #include <string.h>
+#include "unicode.cpp"
 
 u32 gb_fnv32a(void const *data, isize len) {
 	isize i;
@@ -10,81 +11,6 @@ u32 gb_fnv32a(void const *data, isize len) {
 	}
 
 	return h;
-}
-
-/** Unicode categories. */
-typedef enum {
-  UTF8PROC_CATEGORY_CN  = 0, /**< Other, not assigned */
-  UTF8PROC_CATEGORY_LU  = 1, /**< Letter, uppercase */
-  UTF8PROC_CATEGORY_LL  = 2, /**< Letter, lowercase */
-  UTF8PROC_CATEGORY_LT  = 3, /**< Letter, titlecase */
-  UTF8PROC_CATEGORY_LM  = 4, /**< Letter, modifier */
-  UTF8PROC_CATEGORY_LO  = 5, /**< Letter, other */
-  UTF8PROC_CATEGORY_MN  = 6, /**< Mark, nonspacing */
-  UTF8PROC_CATEGORY_MC  = 7, /**< Mark, spacing combining */
-  UTF8PROC_CATEGORY_ME  = 8, /**< Mark, enclosing */
-  UTF8PROC_CATEGORY_ND  = 9, /**< Number, decimal digit */
-  UTF8PROC_CATEGORY_NL = 10, /**< Number, letter */
-  UTF8PROC_CATEGORY_NO = 11, /**< Number, other */
-  UTF8PROC_CATEGORY_PC = 12, /**< Punctuation, connector */
-  UTF8PROC_CATEGORY_PD = 13, /**< Punctuation, dash */
-  UTF8PROC_CATEGORY_PS = 14, /**< Punctuation, open */
-  UTF8PROC_CATEGORY_PE = 15, /**< Punctuation, close */
-  UTF8PROC_CATEGORY_PI = 16, /**< Punctuation, initial quote */
-  UTF8PROC_CATEGORY_PF = 17, /**< Punctuation, final quote */
-  UTF8PROC_CATEGORY_PO = 18, /**< Punctuation, other */
-  UTF8PROC_CATEGORY_SM = 19, /**< Symbol, math */
-  UTF8PROC_CATEGORY_SC = 20, /**< Symbol, currency */
-  UTF8PROC_CATEGORY_SK = 21, /**< Symbol, modifier */
-  UTF8PROC_CATEGORY_SO = 22, /**< Symbol, other */
-  UTF8PROC_CATEGORY_ZS = 23, /**< Separator, space */
-  UTF8PROC_CATEGORY_ZL = 24, /**< Separator, line */
-  UTF8PROC_CATEGORY_ZP = 25, /**< Separator, paragraph */
-  UTF8PROC_CATEGORY_CC = 26, /**< Other, control */
-  UTF8PROC_CATEGORY_CF = 27, /**< Other, format */
-  UTF8PROC_CATEGORY_CS = 28, /**< Other, surrogate */
-  UTF8PROC_CATEGORY_CO = 29, /**< Other, private use */
-} utf8proc_category_t;
-
-bool rune_is_letter(Rune r) {
-	if (r < 0x80) {
-		if (r == '_') {
-			return true;
-		}
-		return ((cast(u32)r | 0x20) - 0x61) < 26;
-	}
-	switch (r) { //utf8proc_category(r)) {
-	case UTF8PROC_CATEGORY_LU:
-	case UTF8PROC_CATEGORY_LL:
-	case UTF8PROC_CATEGORY_LT:
-	case UTF8PROC_CATEGORY_LM:
-	case UTF8PROC_CATEGORY_LO:
-		return true;
-	}
-	return false;
-}
-
-bool rune_is_letter_or_digit(Rune r) {
-	if (r < 0x80) {
-		if (r == '_') {
-			return true;
-		}
-		if (((cast(u32)r | 0x20) - 0x61) < 26) {
-			return true;
-		}
-		return (cast(u32)r - '0') < 10;
-	}
-	switch (r) {//utf8proc_category(r)) {
-	case UTF8PROC_CATEGORY_LU:
-	case UTF8PROC_CATEGORY_LL:
-	case UTF8PROC_CATEGORY_LT:
-	case UTF8PROC_CATEGORY_LM:
-	case UTF8PROC_CATEGORY_LO:
-		return true;
-	case UTF8PROC_CATEGORY_ND:
-		return true;
-	}
-	return false;
 }
 
 // --------------------------------
@@ -392,6 +318,7 @@ struct Tokenizer {
 	//u8 *end;
 
 	Rune  curr_rune;   // current character
+	Rune  peek_rune;
 	//u8 *  curr;        // character pos
 	//u8 *  read_curr;   // pos from start
 	i32   column_minus_one;
@@ -465,7 +392,7 @@ void tokenizer_err(Tokenizer *t, char const *msg, ...) {
 	va_start(va, msg);
 	vprintf(msg, va);
 	va_end(va);
-	t->error_count++;
+	//t->error_count++;
 }
 
 void advance_to_next_rune(TSLexer *lexer, Tokenizer *t, bool skip=false) {
@@ -473,13 +400,13 @@ void advance_to_next_rune(TSLexer *lexer, Tokenizer *t, bool skip=false) {
 		t->column_minus_one = -1;
 		t->line_count++;
 	}
-	if (lexer->lookahead != 0) {
+	if (t->peek_rune != 0) {
+		t->curr_rune = t->peek_rune;
+		t->peek_rune = 0;
+	} else if (lexer->lookahead != 0) {
 		lexer->advance(lexer, skip);
 		Rune rune = lexer->lookahead;		
 		
-		if (rune == 0) {
-			//tokenizer_err(t, "Illegal character NUL");
-		}
 		t->curr_rune = rune;
 		t->column_minus_one++;
 	} else {
@@ -488,7 +415,7 @@ void advance_to_next_rune(TSLexer *lexer, Tokenizer *t, bool skip=false) {
 }
 
 int scan_mantissa(TSLexer *lexer, Tokenizer *t, i32 base) {
-	int digit_cnt = 0;
+	int digit_cnt = 2;
 	
 	while (digit_value(t->curr_rune) < base || t->curr_rune == '_') {
 		if (t->curr_rune != '_') {
@@ -500,15 +427,13 @@ int scan_mantissa(TSLexer *lexer, Tokenizer *t, i32 base) {
 }
 
 Rune peek_rune(TSLexer *lexer, Tokenizer *t, isize offset=0) {
-	lexer->mark_end(lexer); // allows multiple lookahead..
-	// TODO: only do once at beginning of get_token
-	// mark_end will say this is the end of a token.. then any advance will "just look"
-	// until mark_end is called again
+	// TODO: use mark_end() to look at multiple lookaheads then get
+	// back to non-advanced state...
 
-	for (int i=0; i<offset; i++) {
-		lexer->advance(lexer, false);
-	}
-	return lexer->lookahead;
+	// for now just fake it
+	lexer->advance(lexer, false);
+	t->peek_rune = lexer->lookahead;
+	return t->peek_rune;
 }
 
 void scan_number_to_token(TSLexer *lexer, Tokenizer *t, Token *token, bool seen_decimal_point) {
@@ -571,7 +496,7 @@ void scan_number_to_token(TSLexer *lexer, Tokenizer *t, Token *token, bool seen_
 			if (l <= 2) {
 				token->kind = Token_Invalid;
 			} else {
-				switch (l) {
+				switch (l - 2) {
 				case 4:
 				case 8:
 				case 16:

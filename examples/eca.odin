@@ -3,7 +3,7 @@ package eca
 import "core:fmt"
 import "core:math/rand"
 import "core:time"
-import "intrinsics"
+import "core:intrinsics"
 
 elementary_cellular_automata :: proc(state: $T, rule: u8, generations: int, pause: time.Duration = 0)
 	where intrinsics.type_is_integer(T),

@@ -17,7 +17,7 @@ Blah :: enum {
 	C, 
 	D,
 };
-blah: #partial [Blah]int;
+blah: #sparse [Blah]int;
 
 
 //slice type
@@ -43,7 +43,7 @@ astr2 : struct {
 // union type
 Aunion :: union
 {
-	int, u32, f32
+	int, u32, f32,
 };
 
 auni : Aunion;
@@ -53,19 +53,6 @@ auni2 : union {
 // enumtype
 Aenum :: enum {hi, hi2 = 1, lala = 2};
 aenum : enum int { hi, hi2 = 1, lala = 1};
-// bitfield type
-Bftype :: bit_field {
-    width_validated: 1,
-    height_validated: 1,
-    age: 3,
-};
-
-bft : Bftype;
-bf2 : bit_field {
-    width_validated: 1,
-    height_validated: 1,
-    age: 3,
-};
 
 //pointer type
 ap : ^int;
@@ -77,9 +64,7 @@ lala :: proc(a,b,c: int) -> (r :  string) {return;};
 // bitset type
 abst : bit_set[Aenum];
 abs : bit_set[4..<90];
-abs2 : bit_set[4..90];
-// opaque type
-opa : opaque int;
+abs2 : bit_set[4..=90];
 
 // simd vector type
 smdvt : #simd[2]int;

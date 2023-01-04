@@ -31,11 +31,11 @@ module.exports = grammar({
 		$._var_identifier,
     $._label_identifier,
     $._package_identifier,
-    $._top_level_declaration,
     $._string_literal,
   ],
 
   conflicts: $ => [
+		[$.declaration, $._expression],
     [$.declaration, $._range_clause],
 		[$.declaration, $.assignment_statement],		
 		[$.declaration, $.assignment_statement, $._range_clause],
@@ -43,6 +43,8 @@ module.exports = grammar({
     [$._for_init_and_update_clause, $._for_init_clause],
 		[$._expression], // for parapoly
 		[$.initializer_list, $.compound_literal_list],
+		[$._simple_statement, $._expression],
+		[$.top_level, $.if_statement],
   ],
 
 	// note: the order here must match scanner.cc's TokenType enum
@@ -173,32 +175,41 @@ module.exports = grammar({
     ),
 
 		top_level: $ => seq(
-			optional(seq($.Token_when, $._expression, $.Token_OpenBrace)),
 			choice(
-				$.import_declaration,
+				//$.import_declaration,
 				//$.foreign_block,
-				$._declaration),
-			optional($.Token_CloseBrace),
+				$._statement,
+				$.compound_literal,
+			),
 		),
 
     package_clause: $ => seq($.Token_package, $._package_identifier),
 
     import_declaration: $ => seq(
-			optional($.Token_foreign),
+			optional(alias($.Token_foreign, $.keyword)),
       alias($.Token_import, $.keyword),
       optional(field('name', 
-        $._package_identifier
-      )),
-      field('path', $.Token_String)
+										 $._package_identifier
+										)),
+			choice(
+				field('path', $.Token_String),
+				seq($.Token_OpenBrace,
+						optional($.Token_Semicolon),
+						list1($.Token_Comma, $.Token_String),
+						optional($.Token_Comma),
+						$.Token_CloseBrace)),
     ),
 
     foreign_block: $ => seq(
       repeat($.pragma),
       alias($.Token_foreign, $.keyword),
+			optional($.Token_import),
       optional($._package_identifier),
-      $.Token_OpenBrace,
-      list($.Token_Semicolon, optional($._declaration)),
-      $.Token_CloseBrace,
+			seq(
+				$.Token_OpenBrace,
+				list($.Token_Semicolon, optional($._declaration)),
+				$.Token_CloseBrace,
+			)
     ),
 
     _simple_statement: $ => choice(
@@ -221,6 +232,7 @@ module.exports = grammar({
 
 			$._parenthesized_expression, // for #assert(1 == 1)
 			$.foreign_block,
+			$.import_declaration,
 			$.right_unary_expression,
 			$.Token_fallthrough,
     ),
@@ -236,7 +248,7 @@ module.exports = grammar({
 
     using_statement: $ => seq(
       alias($.Token_using, $.keyword),
-			choice($.selector_expression, $.Token_Ident)
+			choice($.selector_expression, $.Token_Ident, seq($.Token_Ident, $.Token_Colon, $.Token_Colon, $.enum_type))
     ),
 
     return_statement: $ => prec.right(seq(
@@ -280,6 +292,7 @@ module.exports = grammar({
       alias($.Token_Colon, $.operator),
 			choice(
 				field('type', $._type),
+				seq($.Token_OpenParen, field('type', $.Token_Ident), $.Token_CloseParen),
 				choice(seq(optional(field('type', $._type)),
 									 alias($.Token_Colon, $.operator),
 									 optional(alias($.Token_distinct, $.keyword)),
@@ -287,7 +300,7 @@ module.exports = grammar({
 									),
 							 seq(optional(field('type', $._type)),
 									 alias($.Token_Eq, $.operator),
-									 field('variable_value', list1($.Token_Comma, choice($._expression, $.compound_literal))),
+									 field('variable_value', list1($.Token_Comma, choice($._expression, $.compound_literal, $.Token_Undef))),
 									)),
 			)
     )),
@@ -302,7 +315,7 @@ module.exports = grammar({
 
     _simple_type: $ => choice(
       alias($.Token_Ident, $.type_identifier),
-      $.selector_expression,
+      alias($.selector_expression, $.type_identifier),
       seq(optional(alias($.Token_Dollar, $.operator)),
 					$._type_identifier,
 				 ),
@@ -360,7 +373,7 @@ module.exports = grammar({
     union_type: $ => seq(
       alias($.Token_union, $.keyword),
 			optional($.parameter_list),
-      $.Token_OpenBrace, list($.Token_Comma, $._type), $.Token_CloseBrace,
+      $.Token_OpenBrace, list($.Token_Comma, $._type), optional($.Token_Comma), $.Token_CloseBrace,
     ),
 
     enum_type: $ => prec(1, seq(
@@ -549,6 +562,7 @@ module.exports = grammar({
 					field('member_proc', $.Token_Ident)
 				),
 			),
+			optional($.Token_Period),
       $.Token_OpenParen,
 			optional($.Token_Comma), // eat a comma for fmt.println(#procedure, "args here")
 			optional(field('arguments', $.initializer_list)),
@@ -579,9 +593,9 @@ module.exports = grammar({
 			list($.Token_Semicolon, optional($._statement)),
     )),
 
-    continue_statement: $ => seq(alias($.Token_continue, $.keyword), optional($._label_identifier)),
+    continue_statement: $ => prec.right(seq(alias($.Token_continue, $.keyword), optional($._label_identifier))),
 
-    break_statement: $ => seq(alias($.Token_break, $.keyword), optional($._label_identifier)),
+    break_statement: $ => prec.right(seq(alias($.Token_break, $.keyword), optional($._label_identifier))),
 
     if_statement: $ => prec.right(seq(
       optional(field('label', seq($._label_identifier, $.Token_Colon))),
@@ -653,7 +667,7 @@ module.exports = grammar({
       $.Token_Semicolon,
       field('condition', $._expression),
       $.Token_Semicolon,
-      field('update', $._simple_statement),
+      optional(field('update', $._simple_statement)),
     ),
 
     _for_empty_clause: $ => seq($.Token_Semicolon, $.Token_Semicolon),
@@ -725,9 +739,9 @@ module.exports = grammar({
 		
     compound_literal: $ => prec.dynamic(-1, seq(
       optional(field('type', $._simple_type)),
-      $.Token_OpenBrace,
+      choice($.Token_OpenBrace, $.Token_OpenParen),
 			optional(field('contents', choice($.initializer_list, $.compound_literal_list))),
-			$.Token_CloseBrace,
+			choice($.Token_CloseBrace, $.Token_CloseParen),
     )),
 
     compiler_directive: $ => seq(

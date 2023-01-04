@@ -52,10 +52,6 @@
             "named": true
           },
           {
-            "type": "selector_expression",
-            "named": true
-          },
-          {
             "type": "struct_type",
             "named": true
           },
@@ -908,10 +904,6 @@
             "named": true
           },
           {
-            "type": "selector_expression",
-            "named": true
-          },
-          {
             "type": "struct_type",
             "named": true
           },
@@ -1100,10 +1092,6 @@
             "named": true
           },
           {
-            "type": "selector_expression",
-            "named": true
-          },
-          {
             "type": "struct_type",
             "named": true
           },
@@ -1259,6 +1247,10 @@
         },
         {
           "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "import_declaration",
           "named": true
         },
         {
@@ -1518,6 +1510,10 @@
           "named": true
         },
         {
+          "type": "import_declaration",
+          "named": true
+        },
+        {
           "type": "index_expression",
           "named": true
         },
@@ -1686,10 +1682,6 @@
             "named": true
           },
           {
-            "type": "selector_expression",
-            "named": true
-          },
-          {
             "type": "struct_type",
             "named": true
           },
@@ -1713,7 +1705,15 @@
           "named": true
         },
         {
+          "type": "Token_CloseParen",
+          "named": true
+        },
+        {
           "type": "Token_OpenBrace",
+          "named": true
+        },
+        {
+          "type": "Token_OpenParen",
           "named": true
         }
       ]
@@ -1926,6 +1926,10 @@
         "required": false,
         "types": [
           {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
             "type": "Token_typeid",
             "named": true
           },
@@ -1963,10 +1967,6 @@
           },
           {
             "type": "proc_type",
-            "named": true
-          },
-          {
-            "type": "selector_expression",
             "named": true
           },
           {
@@ -2025,6 +2025,10 @@
           },
           {
             "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_Undef",
             "named": true
           },
           {
@@ -2135,6 +2139,14 @@
       "required": true,
       "types": [
         {
+          "type": "Token_CloseParen",
+          "named": true
+        },
+        {
+          "type": "Token_OpenParen",
+          "named": true
+        },
+        {
           "type": "keyword",
           "named": true
         },
@@ -2234,10 +2246,6 @@
           },
           {
             "type": "pointer_type",
-            "named": true
-          },
-          {
-            "type": "selector_expression",
             "named": true
           },
           {
@@ -2394,6 +2402,10 @@
           },
           {
             "type": "if_statement",
+            "named": true
+          },
+          {
+            "type": "import_declaration",
             "named": true
           },
           {
@@ -2899,6 +2911,10 @@
           "named": true
         },
         {
+          "type": "Token_import",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -3168,6 +3184,10 @@
             "named": true
           },
           {
+            "type": "import_declaration",
+            "named": true
+          },
+          {
             "type": "index_expression",
             "named": true
           },
@@ -3370,6 +3390,10 @@
             "named": true
           },
           {
+            "type": "import_declaration",
+            "named": true
+          },
+          {
             "type": "index_expression",
             "named": true
           },
@@ -3568,6 +3592,10 @@
             "named": true
           },
           {
+            "type": "import_declaration",
+            "named": true
+          },
+          {
             "type": "index_expression",
             "named": true
           },
@@ -3703,7 +3731,7 @@
       },
       "path": {
         "multiple": false,
-        "required": true,
+        "required": false,
         "types": [
           {
             "type": "Token_String",
@@ -3717,7 +3745,23 @@
       "required": true,
       "types": [
         {
-          "type": "Token_foreign",
+          "type": "Token_CloseBrace",
+          "named": true
+        },
+        {
+          "type": "Token_Comma",
+          "named": true
+        },
+        {
+          "type": "Token_OpenBrace",
+          "named": true
+        },
+        {
+          "type": "Token_Semicolon",
+          "named": true
+        },
+        {
+          "type": "Token_String",
           "named": true
         },
         {
@@ -4675,10 +4719,6 @@
             "named": true
           },
           {
-            "type": "selector_expression",
-            "named": true
-          },
-          {
             "type": "struct_type",
             "named": true
           },
@@ -4734,10 +4774,6 @@
           },
           {
             "type": "proc_type",
-            "named": true
-          },
-          {
-            "type": "selector_expression",
             "named": true
           },
           {
@@ -4820,10 +4856,6 @@
           },
           {
             "type": "proc_type",
-            "named": true
-          },
-          {
-            "type": "selector_expression",
             "named": true
           },
           {
@@ -5091,10 +5123,6 @@
           },
           {
             "type": "proc_type",
-            "named": true
-          },
-          {
-            "type": "selector_expression",
             "named": true
           },
           {
@@ -5610,6 +5638,10 @@
           "named": true
         },
         {
+          "type": "Token_Period",
+          "named": true
+        },
+        {
           "type": "operator",
           "named": true
         }
@@ -5662,10 +5694,6 @@
           },
           {
             "type": "proc_type",
-            "named": true
-          },
-          {
-            "type": "selector_expression",
             "named": true
           },
           {
@@ -6183,6 +6211,10 @@
           "named": true
         },
         {
+          "type": "Token_Period",
+          "named": true
+        },
+        {
           "type": "operator",
           "named": true
         }
@@ -6284,10 +6316,6 @@
           },
           {
             "type": "proc_type",
-            "named": true
-          },
-          {
-            "type": "selector_expression",
             "named": true
           },
           {
@@ -6532,10 +6560,6 @@
           },
           {
             "type": "proc_type",
-            "named": true
-          },
-          {
-            "type": "selector_expression",
             "named": true
           },
           {
@@ -7448,10 +7472,6 @@
           "named": true
         },
         {
-          "type": "selector_expression",
-          "named": true
-        },
-        {
           "type": "struct_type",
           "named": true
         },
@@ -7782,6 +7802,10 @@
           },
           {
             "type": "if_statement",
+            "named": true
+          },
+          {
+            "type": "import_declaration",
             "named": true
           },
           {
@@ -8523,10 +8547,6 @@
       "required": true,
       "types": [
         {
-          "type": "Token_CloseBrace",
-          "named": true
-        },
-        {
           "type": "Token_CloseParen",
           "named": true
         },
@@ -8544,10 +8564,6 @@
         },
         {
           "type": "Token_Integer",
-          "named": true
-        },
-        {
-          "type": "Token_OpenBrace",
           "named": true
         },
         {
@@ -8571,15 +8587,19 @@
           "named": true
         },
         {
+          "type": "Token_fallthrough",
+          "named": true
+        },
+        {
           "type": "Token_typeid",
           "named": true
         },
         {
-          "type": "Token_when",
+          "type": "array_type",
           "named": true
         },
         {
-          "type": "array_type",
+          "type": "assignment_statement",
           "named": true
         },
         {
@@ -8591,11 +8611,43 @@
           "named": true
         },
         {
+          "type": "block_statement",
+          "named": true
+        },
+        {
+          "type": "break_statement",
+          "named": true
+        },
+        {
+          "type": "compound_literal",
+          "named": true
+        },
+        {
+          "type": "continue_statement",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
         {
+          "type": "defer_statement",
+          "named": true
+        },
+        {
           "type": "enum_type",
+          "named": true
+        },
+        {
+          "type": "for_statement",
+          "named": true
+        },
+        {
+          "type": "foreign_block",
+          "named": true
+        },
+        {
+          "type": "if_statement",
           "named": true
         },
         {
@@ -8651,6 +8703,10 @@
           "named": true
         },
         {
+          "type": "return_statement",
+          "named": true
+        },
+        {
           "type": "right_unary_expression",
           "named": true
         },
@@ -8660,6 +8716,10 @@
         },
         {
           "type": "struct_type",
+          "named": true
+        },
+        {
+          "type": "switch_statement",
           "named": true
         },
         {
@@ -8676,6 +8736,10 @@
         },
         {
           "type": "union_type",
+          "named": true
+        },
+        {
+          "type": "using_statement",
           "named": true
         }
       ]
@@ -8829,6 +8893,174 @@
     }
   },
   {
+    "type": "type_identifier",
+    "named": true,
+    "fields": {
+      "field": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Question",
+            "named": true
+          }
+        ]
+      },
+      "parent": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "Token_CloseParen",
+            "named": true
+          },
+          {
+            "type": "Token_Float",
+            "named": true
+          },
+          {
+            "type": "Token_Ident",
+            "named": true
+          },
+          {
+            "type": "Token_Imag",
+            "named": true
+          },
+          {
+            "type": "Token_Integer",
+            "named": true
+          },
+          {
+            "type": "Token_OpenParen",
+            "named": true
+          },
+          {
+            "type": "Token_Period",
+            "named": true
+          },
+          {
+            "type": "Token_Rune",
+            "named": true
+          },
+          {
+            "type": "Token_String",
+            "named": true
+          },
+          {
+            "type": "Token_context",
+            "named": true
+          },
+          {
+            "type": "Token_typeid",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bit_set_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "left_unary_expression",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "matrix_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "parapoly",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_group",
+            "named": true
+          },
+          {
+            "type": "proc_literal",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "right_unary_expression",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "ternary_expression",
+            "named": true
+          },
+          {
+            "type": "type_conversion",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "Token_Period",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "union_type",
     "named": true,
     "fields": {},
@@ -8897,10 +9129,6 @@
           "named": true
         },
         {
-          "type": "selector_expression",
-          "named": true
-        },
-        {
           "type": "struct_type",
           "named": true
         },
@@ -8924,7 +9152,15 @@
       "required": true,
       "types": [
         {
+          "type": "Token_Colon",
+          "named": true
+        },
+        {
           "type": "Token_Ident",
+          "named": true
+        },
+        {
+          "type": "enum_type",
           "named": true
         },
         {
@@ -9043,7 +9279,7 @@
     "named": true
   },
   {
-    "type": "Token_foreign",
+    "type": "Token_import",
     "named": true
   },
   {
@@ -9052,10 +9288,6 @@
   },
   {
     "type": "Token_typeid",
-    "named": true
-  },
-  {
-    "type": "Token_when",
     "named": true
   },
   {
@@ -9088,10 +9320,6 @@
   },
   {
     "type": "pragma_identifier",
-    "named": true
-  },
-  {
-    "type": "type_identifier",
     "named": true
   },
   {

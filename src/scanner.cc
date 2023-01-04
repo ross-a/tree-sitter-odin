@@ -67,6 +67,7 @@ bool tree_sitter_odin_external_scanner_scan(void *payload, TSLexer *lexer,
 		t->line_count = 1;
 		t->curr_file_id = -1;
 		t->curr_rune = lexer->lookahead;
+		t->peek_rune = 0;
 	}
 
 	Token tok;
